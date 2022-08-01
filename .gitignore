@@ -10,7 +10,6 @@ Icon
 .Trashes
 ._*
 .env.example
-yarn.lock
 
 .cache
 ############################
