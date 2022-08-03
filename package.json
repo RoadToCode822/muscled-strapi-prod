@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "knex": "0.21.21",
+    "objection": "^2.2.18",
     "@strapi/plugin-i18n": "4.3.0",
     "@strapi/plugin-users-permissions": "4.3.0",
     "@strapi/strapi": "4.3.0",
