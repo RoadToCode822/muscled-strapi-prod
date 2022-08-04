@@ -1,8 +1,9 @@
 const parse = require("pg-connection-string").parse;
 
-const { host, port, database, user, password } = parse(
-  "postgresql://doadmin:AVNS_tL4BIk4dCRcIm8WOvS7@strapi-prod-do-user-4657530-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
-);
+const { host, port, database, user, password } = parse(process.env.DB_STRING);
+
+//production
+
 module.exports = () => ({
   connection: {
     client: "postgres",
@@ -19,3 +20,22 @@ module.exports = () => ({
     debug: false,
   },
 });
+
+
+//  development
+
+// module.exports = ({ env }) => ({
+//   connection: {
+//     client: 'postgres',
+//     connection: {
+//       host: env('DATABASE_HOST', 'localhost'),
+//       port: env.int('DATABASE_PORT', 5432),
+//       database: env('DATABASE_NAME', 'postgres'),
+//       user: env('DATABASE_USERNAME', 'postgres'),
+//       password: env('DATABASE_PASSWORD', 'Loveinthetimeofcolera1.'),
+//       schema: env('DATABASE_SCHEMA', 'public'), // Not required
+//       ssl: false,
+//     },
+//     debug: false,
+//   },
+// });
