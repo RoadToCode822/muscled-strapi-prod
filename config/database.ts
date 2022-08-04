@@ -32,7 +32,7 @@ module.exports = () => ({
 //       port: env.int('DATABASE_PORT', 5432),
 //       database: env('DATABASE_NAME', 'postgres'),
 //       user: env('DATABASE_USERNAME', 'postgres'),
-//       password: env('DATABASE_PASSWORD', ''),
+//       password: env('DATABASE_PASSWORD', 'Loveinthetimeofcolera1.'),
 //       schema: env('DATABASE_SCHEMA', 'public'), // Not required
 //       ssl: false,
 //     },
