@@ -1,0 +1,54 @@
+{
+    "kind": "collectionType",
+    "collectionName": "sections",
+    "info": {
+        "singularName": "section",
+        "pluralName": "sections",
+        "displayName": "Section",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "Components": {
+            "type": "dynamiczone",
+            "components": [
+                "others.image-with-text",
+                "others.profile",
+                "small-components.card",
+                "small-components.counter",
+                "small-components.link-list",
+                "small-components.table-of-contents"
+            ]
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "pages": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::page.page",
+            "mappedBy": "section"
+        }
+    }
+}
