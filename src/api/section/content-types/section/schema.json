@@ -30,7 +30,12 @@
         "small-components.card",
         "small-components.counter",
         "small-components.link-list",
-        "small-components.table-of-contents"
+        "small-components.table-of-contents",
+        "button.button",
+        "cell.cell",
+        "cta.cta",
+        "input-field.input-field",
+        "logo.logo"
       ]
     },
     "image": {
