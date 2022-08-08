@@ -8,6 +8,16 @@
     "attributes": {
         "value": {
             "type": "string"
+        },
+        "check": {
+            "type": "boolean"
+        },
+        "SelectOne": {
+            "type": "enumeration",
+            "enum": [
+                "Yes",
+                "No"
+            ]
         }
     }
 }
