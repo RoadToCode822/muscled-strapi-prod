@@ -35,7 +35,8 @@
                 "small-components.card",
                 "small-components.counter",
                 "small-components.link-list",
-                "small-components.table-of-contents"
+                "small-components.table-of-contents",
+                "logo.logos"
             ]
         },
         "image": {
