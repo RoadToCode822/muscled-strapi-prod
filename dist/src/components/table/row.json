@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_table_rows",
+    "info": {
+        "displayName": "row",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "text"
+        },
+        "column": {
+            "type": "component",
+            "repeatable": true,
+            "component": "table.table"
+        },
+        "RowType": {
+            "type": "enumeration",
+            "enum": [
+                "Head",
+                "Body"
+            ]
+        }
+    }
+}
