@@ -50,11 +50,10 @@
         "audios"
       ]
     },
-    "pages": {
+    "page": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::page.page",
-      "mappedBy": "section"
+      "relation": "oneToOne",
+      "target": "api::page.page"
     },
     "sectionName": {
       "type": "string"
