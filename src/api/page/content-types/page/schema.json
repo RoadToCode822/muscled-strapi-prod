@@ -20,12 +20,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "section": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::section.section",
-      "inversedBy": "pages"
     }
   }
 }
