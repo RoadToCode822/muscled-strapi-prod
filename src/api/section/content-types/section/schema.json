@@ -39,7 +39,7 @@
         "logo.logos"
       ]
     },
-    "image": {
+    "media": {
       "type": "media",
       "multiple": false,
       "required": false,
