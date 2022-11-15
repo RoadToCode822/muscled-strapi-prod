@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proposal_forms",
+  "info": {
+    "singularName": "proposal-form",
+    "pluralName": "proposal-forms",
+    "displayName": "proposalForm",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email_adress": {
+      "type": "email",
+      "required": true
+    },
+    "first_last_name": {
+      "type": "text",
+      "required": true
+    },
+    "website": {
+      "type": "text",
+      "required": true
+    },
+    "company": {
+      "type": "text",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "comments": {
+      "type": "text"
+    }
+  }
+}
